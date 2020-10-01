@@ -1,4 +1,4 @@
-# Status
+##### Status
 
 **NOTE:** This app is being [completely refactored (develop branch)](https://github.com/tent/tent-status/tree/develop).
 
@@ -8,9 +8,9 @@ Status is a Tent app written in JavaScript/CoffeeScript using the [Marbles.js](h
 
 There is an additional Ruby backend which handles authentication and serving up assets, and compiling a static version of the app.
 
-## Getting Started
+##### Getting Started
 
-### Configuration
+##### Configuration
 
 All configuration options can either be set through environment variables or in a `Hash` to `TentStatus.configure`.
 
@@ -42,7 +42,7 @@ DEFAULT_AVATAR_ROOT    | `:default_avatar_root`    | Optional                   
 
 **TODO:** Entity search service and CDN support are not currently implemented.
 
-### Global nav config
+##### Global nav config
 
 ```json
 {
@@ -52,9 +52,9 @@ DEFAULT_AVATAR_ROOT    | `:default_avatar_root`    | Optional                   
 }
 ```
 
-### Running Statically
+##### Running Statically
 
-#### config.json
+##### config.json
 
 Property                         | Required | Type   | Description
 -------------------------------- | -------- | ------ | -----------
@@ -79,9 +79,9 @@ Property                         | Required | Type   | Description
 }
 ```
 
-### Running via Ruby backend
+##### Running via Ruby backend
 
-#### Heroku
+##### Heroku
 
 ```shell
 heroku create --addons heroku-postgresql:dev
@@ -95,7 +95,7 @@ git push heroku master
 heroku open
 ```
 
-#### Ruby
+##### Ruby
 
 Ruby 1.9 and 2.0 supported. It has not been tested with 1.8.7.
 
@@ -120,7 +120,7 @@ sudo update-alternatives --config ruby # make sure 1.9 is the default
 ```
 
 
-#### PostgreSQL
+##### PostgreSQL
 
 tent-status requires a PostgreSQL database.
 
@@ -134,7 +134,7 @@ createdb status
 ```
 
 
-#### Bundler
+##### Bundler
 
 Bundler is a project dependency manager for Ruby.
 
@@ -146,7 +146,7 @@ gem install bundler
 
 Node.js should be installed as a javascript runtime for asset compiliation (`brew install node` on OS X).
 
-#### Running
+##### Running
 
 Clone this repository, and `cd` into the directory. This should start the app:
 
@@ -155,7 +155,7 @@ bundle install
 DATABASE_URL=postgres://localhost/status APP_NAME='Status' SESSION_SECRET=abc APP_URL=http://localhost:3000 bundle exec puma -p 3000
 ```
 
-## Contributing
+##### Contributing
 
 Head over to the [develop branch](https://github.com/tent/tent-status/tree/develop).
 
